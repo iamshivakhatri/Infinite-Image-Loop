@@ -1,0 +1,43 @@
+.main-container{
+ background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden; /* Hide any overflowing content */
+  flex-direction: row;
+  white-space: nowrap;
+  display: flex;
+  margin-top: 90px;
+}
+
+.image-container{
+    display: flex;
+    animation: 12s scroll infinite linear;
+}
+
+.image-container .image-item{
+    min-height: 300px;
+    min-width: 300px;
+    background-color: aquamarine;
+    margin-right: 20px;
+
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        /* Calculate the total width of all image items */
+    transform: translateX(-100%) /* Assuming there are 7 image items with a margin-right of 20px */
+    }
+  }
+
+  /***/
